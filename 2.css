@@ -1,0 +1,55 @@
+body {
+	background-color: #192a56;
+	overflow-x: hidden; 
+	margin: 0;
+	padding: 0;
+}
+.navbar{
+	height: 70px;
+	width: 100%;
+	background-color:white;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.navkanan {
+	float: right;
+}
+
+.navbar h1{
+	margin: 13px auto 0 15px;
+}
+.login {
+	margin-top: -37px;
+	margin-right: 20px; 
+}
+.navbar button{
+	padding: 10px 14px 10px 14px;
+    margin: 5px;
+    /*border-radius: 3px;*/
+    border: none;
+    background-color: #273c75;
+    color: #FFFFFF;
+}
+.deskripsi{
+	height: 300px;
+	width: 100%;
+	background-color: white;
+	margin-top: 110px;
+}
+.tengah{
+    padding-top: 100px;
+    padding-left: 275px;
+        display: flex;
+}
+.kanan {
+	float: right;
+margin: -69px 100px auto;
+}
+.kiri{
+	float: left;
+	margin: 100px 0 0 50px;
+}
