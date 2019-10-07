@@ -24,7 +24,7 @@ body {
 }
 .login {
 	margin-top: -37px;
-	margin-right: 20px; 
+	margin-right: 116px;
 }
 .navbar button{
 	padding: 10px 14px 10px 14px;
@@ -37,13 +37,15 @@ body {
 .deskripsi{
 	height: 300px;
 	width: 100%;
-	background-color: white;
-	margin-top: 110px;
+	background-color: #434CF4;
+	margin-top: 71px;
+	margin-right: 72px;
+	margin-left: -9px;
 }
 .tengah{
-    padding-top: 100px;
-    padding-left: 275px;
-        display: flex;
+	padding-top: 100px;
+	padding-left: 135px;
+	display: flex;
 }
 .kanan {
 	float: right;
@@ -52,4 +54,8 @@ margin: -69px 100px auto;
 .kiri{
 	float: left;
 	margin: 100px 0 0 50px;
+}
+.Nama {
+}
+#email {
 }
