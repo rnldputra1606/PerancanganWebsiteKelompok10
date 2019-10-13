@@ -18,10 +18,11 @@ div.konten{
     border-radius: 16px;
     min-height: 256px;
     overflow: hidden;
-      position: relative;
-  top: 15px;
-  right: 425px;
-  border: 3px solid #543535;
+    position: absolute;
+    top: -20px;
+    right: 425px;
+    border: 3px solid #543535;
+    left: 34%;
 }
 .navbar{
 	height: 70px;
