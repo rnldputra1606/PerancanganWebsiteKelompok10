@@ -5,6 +5,7 @@
 	font-family: sans-serif;
 }
 body {
+	overflow-x: hidden;
 	background: #c0c0c0;
 	background: url('gambar/4.png');
 	background-image: url('gambar/4.png');
@@ -62,7 +63,7 @@ div ul li a{
 	padding: 10px;
 }
 
-.flex { 
+.flex {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -80,11 +81,12 @@ div ul li a{
 /* flex options */
 .box {
   flex: 1;  /* default size to fit container width */
-  margin: 15px auto auto 50px;
+  margin: auto auto auto 50px;
+	padding-bottom: 5px;
 }
 .box-1 {
   flex: 2; /* 2x larger than default size to fit container width */
-   margin: 15px auto auto 30px;
+   margin: auto auto auto 30px;
 }
 .box-2 {
   flex: 0.5; /* 0.5 smaller than default size to fit container width */
@@ -236,3 +238,46 @@ table th td {
 /*.desing {
 	display: flex;
 }*/
+.ava_border {
+	margin: 30px auto;
+	left: 46%;
+	justify-content: center;
+	position: relative;
+}
+.avatar {
+	image-resolution: from-image;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+ul span {
+	display: block;
+	padding: 8px;
+	margin-left: 40px;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.inidata {
+	/* display: flex; */
+	/* display: block; */
+	padding: 8px;
+	/* margin-left: -288px; */
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.isidata {
+	margin-left: -200px;
+}
+
+.data_sponsor {
+	margin: 20px auto auto 108px;
+	color:#FFFFFF;
+}
+
+.divider {
+	margin-left: 107px;
+	color: #FFFFFF;
+}
