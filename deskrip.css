@@ -38,6 +38,10 @@ body {
 	margin-right: 20px;
 	margin-top: 15px;
 }
+.box{
+	color: white;
+
+}
 
 div ul {
 	list-style: none;
@@ -139,7 +143,7 @@ table th td {
   margin-top: 150px;
   width: 100%;
   position: relative;
-  height: auto;
+
   background-color: #070617;
 }
 .footer .col {
@@ -218,6 +222,7 @@ table th td {
   .footer .col ul li {
     font-size: 13px;
   }
+
 }
 @media only screen and (max-width: 500px) {
     .footer .col {
@@ -229,6 +234,8 @@ table th td {
     .footer .col ul li {
       font-size: 13px;
     }
+
+
 }
 @media only screen and (max-width: 340px) {
   .footer .col {
@@ -255,7 +262,7 @@ ul span {
 	display: block;
 	padding: 8px;
 	margin-left: 40px;
-	text-align: left;
+	/* text-align: left; */
 	color: #FFFFFF;
 }
 
