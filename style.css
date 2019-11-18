@@ -11,6 +11,25 @@ body{
     background-image: url('gambar/4.png');
 }
 
+div ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: right;
+	/* float: right; */
+	margin: 23px auto;
+}
+
+div ul li {
+	display: inline-block;
+	margin-left: 35px;
+	line-height: 1.5;
+}
+
+div ul li a{
+	text-decoration: none;
+	color: #000000;
+}
+
 div.konten{
     background: #61b2f9;
     width: 350px;

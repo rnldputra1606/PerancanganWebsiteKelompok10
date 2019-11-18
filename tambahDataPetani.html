@@ -1,0 +1,73 @@
+<html>
+
+<head>
+	<title>Ifarm</title>
+	<link rel="icon" type="image/png" href="gambar/plant.png">
+	<link rel="stylesheet" href="tambahDataAdmin.css">
+</head>
+
+</style>
+
+<body>
+
+
+		<div class="navbar">
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tambahDataAdmin.html">Tambah Data Tanaman</a></li>
+          <li><a href="tambahDataPetani.html">Farmer</a></li>
+          <li><a href="profile.html">Investor</a></li>
+					<li><a href="index.html">Log Out</a></li>
+        </ul>
+      </div>
+			<div class="logo">
+				<h1>IFARM</h1>
+			</div>
+    </div>
+
+    <div>
+        <form method="post" action="">
+
+            <label for="Nama Petani">Nama Petani</label>
+            <input type="text" id="Nama Petani" name="Nama Petani" placeholder="Masukan Nama Petani.." autocomplete="off" required />
+
+            <label for="Tanggal Lahir">Tanggal Lahir</label>
+            <input type="date" id="Tanggal Lahir" name="Tanggal Lahur" placeholder="Tanggal Lahir" autocomplete="off" required />
+
+						<label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="email" autocomplete="off" required />
+
+            <input type='file' onchange="readURL(this);" id="inputFile" />
+            <img id="image_upload_preview" src="http://placehold.it/180" alt="your image" style="width:180px;" />
+
+            <input type="submit" name="submit" value="simpan" />
+
+          </form>
+    </div>
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+        function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#image_upload_preview').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#inputFile").change(function () {
+        readURL(this);
+    });
+
+
+</script>
+</html>

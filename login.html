@@ -11,6 +11,8 @@
   <body>
   <div class="navbar" >
   	<h1>IFARM</h1>
+    <div class="menu">
+
     <div class="konten">
         <div class="kepala">
             <div class="lock"></div>
@@ -51,9 +53,13 @@
       var pass = $('#pass').val();
       if(username == "asd" && pass == "asd"){
         alert('welcome');
-        $('#basic-form').attr('action', 'index.html');
+        $('#basic-form').attr('action', 'index2.html');
       }else if (username == "" && pass == ""){
         alert('Masukkan');
+      }
+      else if (username == "admin" && pass == "admin"){
+        alert('welcome');
+        $('#basic-form').attr('action', 'tambahDataAdmin.html');
       }else{
         myValidation();
       }
