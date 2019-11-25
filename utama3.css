@@ -362,18 +362,7 @@ h2 {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
-[data-pagination],
-[data-pagination] *,
-[data-pagination] *:before,
-[data-pagination] *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-kerning: auto;
-}
+
 [data-pagination] {
   font-size: 8pt;
   line-height: 1;
@@ -439,7 +428,6 @@ h2 {
     font-size: 16pt;
   }
 }
-
 
   /**
   html {

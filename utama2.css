@@ -6,68 +6,68 @@
 @gray-lightest:             lighten(@gray-lighter,4%);
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-	background: #c0c0c0;
-	background: url('gambar/4.png');
-	background-image: url('gambar/4.png');
+  background: #c0c0c0;
+  background: url('gambar/4.png');
+  background-image: url('gambar/4.png');
 }
 
 .navbar {
-	height: 70px;
-	width: 100%;
-	background-color: white;
-	position: relative;
-	top: 0;
-	bottom: 0;
-	margin-top: 40px;
-	display: inline-block;
-	overflow: hidden;
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin-top: 40px;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .icon{
-	height: 40px;
-	width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .menu {
-	display: inline-block;
+  display: inline-block;
 
 }
 
 .logo {
-	float: right;
-	margin-right: 20px;
-	margin-top: 15px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 15px;
 }
 
 div ul {
-	list-style: none;
-	overflow: hidden;
-	text-align: right;
-	/* float: right; */
-	margin: 23px auto;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  /* float: right; */
+  margin: 23px auto;
 }
 
 div ul li {
-	display: inline-block;
-	margin-left: 35px;
-	line-height: 1.5;
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
 }
 
 div ul li a{
-	text-decoration: none;
-	color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 .content {
-	margin: 25px auto;
-	padding: 10px;
+  margin: 25px auto;
+  padding: 10px;
 }
 
 h1,
@@ -76,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+  clear: both;
   font-family: 'Patua One', serif;
   letter-spacing: 2px;
 }
@@ -181,13 +181,13 @@ h2 {
   img {
       display: block;
       border: 0;
-      width: 95%;
+      width: 100%;
       height: auto;
   }
 
 
   .card {
-      background: black;
+      background: white;
       margin-bottom: 2em;
   }
 
@@ -361,6 +361,84 @@ h2 {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+}
+
+[data-pagination],
+[data-pagination] *,
+[data-pagination] *:before,
+[data-pagination] *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+[data-pagination] {
+  font-size: 8pt;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Source Sans Pro', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  margin: 1em auto;
+  text-align: center;
+  transition: font-size .2s ease-in-out;
+}
+[data-pagination] ul {
+  list-style-type: none;
+  display: inline;
+  font-size: 100%;
+  margin: 0;
+  padding: .5em;
+}
+[data-pagination] ul li {
+  display: inline-block;
+  font-size: 100%;
+  width: auto;
+  border-radius: 3px;
+}
+[data-pagination] > a {
+  font-size: 140%;
+}
+[data-pagination] a {
+  color: #777;
+  font-size: 100%;
+  padding: .5em;
+}
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+  color: #f60;
+}
+[data-pagination] li.current {
+  background: rgba(0,0,0,.1)
+}
+/* Disabled & Hidden Styles */
+[data-pagination] .disabled,
+[data-pagination] [hidden],
+[data-pagination] [disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+@media (min-width: 350px) {
+  [data-pagination] {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 500px) {
+  [data-pagination] {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 700px) {
+  [data-pagination] {
+    font-size: 14pt;
+  }
+}
+@media (min-width: 900px) {
+  [data-pagination] {
+    font-size: 16pt;
+  }
 }
   /**
   html {
