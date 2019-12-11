@@ -88,8 +88,8 @@
 <nav data-pagination>
   <a href=# disabled><i class=ion-chevron-left></i></a>
   <ul>
-    <li class=current><a href=#1>1</a>
-    <li><a href=#2>2</a>
+    <li class=current><a href="#1" id="nm1">1</a>
+    <li><a href="#2" id="nm2">2</a>
     <li><a href=#3>3</a>
     <li><a href=#4>4</a>
     <li><a href=#5>5</a>
@@ -179,6 +179,45 @@
 
 <div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$('#nm2').click(function(){
+ambilData();
+})
+$('#nm1').click(function(){
+removeData();
+})
+function ambilData() {
+$.ajax({
+url: 'http://rnldputra1606.github.io/data.json',
+success: function(response) {
+for (var i = 0; i < response.count; i++) {
+//console.log(response.result[i]);
+$('.content').find('section')
+.append("<div class='append"+response.result[i].ID+"'>")
+.append($("<article class='card'><a href='deskripsi2.html'><picture class='thumbnail'><img src='gambar/sukun.jpg' alt='A banana that looks like a bird'></picture><div class='card-content'>")
+.append($('<h2>').text(response.result[i].Nama))
+.append($('<p>Ayo Investasi ').text(response.result[i].Deskripsi))
+.append($('<p>Klik banner untuk lebih detail</p></div><!-- .card-content --></a></article>'))
+)
+}
+}
+});
+}
+
+function removeData() {
+$.ajax({
+url: 'http://rnldputra1606.github.io/data.json',
+success: function(response) {
+for (var i = response.count-1; i >= 0; i--) {
+$('.append'+response.result[i].ID).next().remove();
+$('.append'+response.result[i].ID).remove();
+}
+}
+});
+}
+
+</script>
 	</body>
 
 </html>
