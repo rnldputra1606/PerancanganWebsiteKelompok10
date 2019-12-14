@@ -189,7 +189,7 @@ removeData();
 })
 function ambilData() {
 $.ajax({
-url: 'http://rnldputra1606.github.io/data.json',
+url: 'https://rnldputra1606.github.io/data.json',
 success: function(response) {
 for (var i = 0; i < response.count; i++) {
 //console.log(response.result[i]);
@@ -207,7 +207,7 @@ $('.content').find('section')
 
 function removeData() {
 $.ajax({
-url: 'http://rnldputra1606.github.io/data.json',
+url: 'https://rnldputra1606.github.io/data.json',
 success: function(response) {
 for (var i = response.count-1; i >= 0; i--) {
 $('.append'+response.result[i].ID).next().remove();
